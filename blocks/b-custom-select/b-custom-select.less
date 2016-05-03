@@ -1,0 +1,70 @@
+.b-custom-select {
+  font-family: @Arial;
+  overflow: hidden;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #bcbdc0;
+  position: relative;
+  display: inline-block;
+  height: 33px;
+  background: #ffffff; /* Old browsers */
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%); /* W3C */
+}
+
+.b-custom-select:before {
+  content: "▾";
+  font-size: 17px;
+  color: #818491;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  line-height: 1;
+  top: 0;
+  bottom: 0;
+  width: 27px;
+  //border-left: 1px solid #bcbdc0;
+  line-height: 33px;
+  background: #ffffff; /* Old browsers */
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%); /* W3C */
+}
+
+.b-custom-select__sel {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  .reset();
+  font-size: 14px;
+  border: 0;
+  //border: 1px solid red;
+  display: block;
+  position: relative;
+  width: 100%;
+  //margin-right: -20px;
+  height: 100%;
+  padding-left: 10px;
+  opacity: 0;
+  top: -100%;
+}
+
+.b-custom-select__selected {
+  white-space: nowrap;
+  margin-left: 5px;
+  line-height: 33px;
+  margin-right: 40px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*------------*/
+
+.b-custom-select_f {
+  width: 100%;
+}
+
+/*--------------*/
+
+.b-custom-select_a {
+  width: auto;
+}

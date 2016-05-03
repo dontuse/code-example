@@ -1,0 +1,77 @@
+.b-basket-payment {
+  .clearFix();
+}
+
+.b-basket-payment__title {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.b-basket-payment__nav, {
+  .clearFix();
+  margin-bottom: 35px;
+}
+
+.b-basket-payment__tab {
+  display: none;
+}
+.b-basket-payment__tab.active {
+  display: block;
+}
+
+
+.b-basket-payment__col {
+  float: left;
+  width: 20%;
+  padding-right: 10px;
+}
+
+.b-basket-payment__lnk,
+.b-basket-payment__lnk:visited {
+  width: 158px;
+  display: block;
+  text-decoration: none;
+
+}
+
+.b-basket-payment__lnk-pic {
+  height: 60px;
+  width: 85px;
+  background: no-repeat 0 0;
+  display: block;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  margin-bottom: 7px;
+}
+
+.b-basket-payment__lnk-txt {
+  border-bottom: 1px dashed ;
+}
+
+
+.b-basket-payment__lnk:hover .b-basket-payment__lnk-pic,
+.b-basket-payment__lnk.active .b-basket-payment__lnk-pic {
+  opacity: 1;
+}
+
+
+.b-basket-payment__lnk_1 .b-basket-payment__lnk-pic,
+.b-basket-payment__lnk_pri-poluchenii .b-basket-payment__lnk-pic, {
+  background-image: url("@{blocksPath}/b-basket-payment/b-basket-payment-1.png");
+}
+.b-basket-payment__lnk_2 .b-basket-payment__lnk-pic,
+.b-basket-payment__lnk_po-predoplate .b-basket-payment__lnk-pic {
+  background-image: url("@{blocksPath}/b-basket-payment/b-basket-payment-2.png");
+}
+.b-basket-payment__lnk_3 .b-basket-payment__lnk-pic,
+.b-basket-payment__lnk_beznalichniy-raschet .b-basket-payment__lnk-pic {
+  background-image: url("@{blocksPath}/b-basket-payment/b-basket-payment-3.png");
+}
+.b-basket-payment__lnk_4 .b-basket-payment__lnk-pic,
+.b-basket-payment__lnk_internet-bank .b-basket-payment__lnk-pic {
+  background-image: url("@{blocksPath}/b-basket-payment/b-basket-payment-4.png");
+}
+.b-basket-payment__lnk_5 .b-basket-payment__lnk-pic,
+.b-basket-payment__lnk_v-kredit .b-basket-payment__lnk-pic {
+  background-image: url("@{blocksPath}/b-basket-payment/b-basket-payment-5.png");
+}

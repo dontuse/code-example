@@ -1,0 +1,36 @@
+.b-gift {
+  font-size: 25px;
+  font-weight: bold;
+  color: #008BB9;
+  align-items: center;
+  display: flex;
+  font-family: @font1;
+  text-decoration: none;
+  &__icon {
+    margin-right: 10px;
+    line-height: 1;
+    & svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__col-2 {
+    margin-right: 10px;
+  }
+  &__title {
+    font-size: 13px;
+    line-height: 1;
+    color: black;
+    font-family: Arial;
+  }
+  &__sum {
+    font-size: 26px;
+    line-height: 1;
+  }
+  & .gift-path {
+    fill: #008BB9;
+  }
+  &:hover .gift-path {
+    fill: @cRed;
+  }
+}

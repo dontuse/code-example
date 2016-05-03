@@ -1,0 +1,127 @@
+.b-prod-basket {
+
+}
+
+.b-prod-basket__el {
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  margin-bottom: 23px;
+  width: 68%;
+  position: relative;
+  transition: border 0.4s ease;
+}
+
+.b-prod-basket__el:hover {
+ // box-shadow: -1px -1px 3px 4px  inset #000000  ;
+}
+
+.b-prod-basket__el:after {
+  content: '';
+  width: 2px;
+  height: 18px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 289px;
+}
+
+.b-prod-basket__el:before {
+  content: '';
+  width: 2px;
+  height: 18px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 289px;
+}
+
+.b-prod-basket__layout {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.b-prod-basket__box-1 {
+  width: 291px;
+  padding: 17px;
+  padding-left: 20px;
+  border-right: 1px solid #d9d9d9;
+  display: table-cell;
+}
+
+.b-prod-basket__box-2 {
+  overflow: hidden;
+  padding-left: 10px;
+  //padding-top: 100px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.b-prod-basket__price {
+  display: inline-block;
+}
+
+.b-prod-basket__num {
+  font-weight: bold;
+  font-size: 24px;
+
+}
+
+.b-prod-basket__cy {
+  font-size: 16px;
+}
+
+.b-prod-basket__del {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  line-height: 33px;
+}
+
+.b-prod-basket__count {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.b-prod-basket__remove,
+.b-prod-basket__remove:visited {
+  color: #808080;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.b-prod-basket__remove:hover {
+  color: @cRed;
+}
+
+.b-prod-basket__warning {
+  font-size: 13px;
+  color: @cRed;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+
+.b-prod-basket__delivery-box {
+  margin-top: 20px;
+  border-bottom: 1px dotted #d9d9d9;
+  border-top: 1px dotted #d9d9d9;
+  padding-top: 10px;
+}
+
+.b-prod-basket__delivery-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: @font1;
+}
+
+.b-prod-basket_del_price {
+  color: @cRed;
+}
+
+.b-prod-basket__overpayment-box {
+  display: inline-block;
+}

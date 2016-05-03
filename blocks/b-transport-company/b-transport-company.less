@@ -1,0 +1,74 @@
+.b-transport-company {
+
+}
+
+.b-transport-company__el {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 44px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 10px;
+  height: 44px;
+  text-decoration: underline;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+  opacity: 0.6;
+  color: #0078b0;
+}
+
+.b-transport-company__el:hover {
+  text-decoration: none;
+}
+
+.b-transport-company__el:before {
+  content: '';
+  width: 30px;
+  height: 44px;
+  display: inline-block;
+  vertical-align: middle;
+  background: red;
+  margin-right: 10px;
+  background: url("@{blocksPath}/b-transport-company/b-transport-company_dpd.png") no-repeat center center;
+}
+
+.b-transport-company__el_baikal:before {
+  background-image: url("@{blocksPath}/b-transport-company/b-transport-company_baikal.png");
+}
+
+.b-transport-company__el_baikal:before {
+  background-image: url("@{blocksPath}/b-transport-company/b-transport-company_baikal.png");
+}
+
+.b-transport-company__el_delovie:before {
+  background-image: url("@{blocksPath}/b-transport-company/b-transport-company_delovie.png");
+}
+
+.b-transport-company__el_kit:before {
+  background-image: url("@{blocksPath}/b-transport-company/b-transport-company_kit.png");
+}
+
+.b-transport-company__el_card:before,
+.b-transport-company__el_card-on-site:before {
+  background-image: url("@{blocksPath}/b-p-list/b-p-list-2.png");
+}
+
+.b-transport-company__el_cash:before,
+.b-transport-company__el_cash-in-office:before,
+.b-transport-company__el_card-in-office:before {
+  background-image: url("@{blocksPath}/b-p-list/b-p-list-1.png");
+}
+
+.b-transport-company__el_russian-standart:before {
+  background-image: url("@{blocksPath}/i-pic/rus-standart-tab-icon.png");
+}
+
+.b-transport-company__el.active {
+  border: 1px solid #cccccc;
+  opacity: 1;
+  text-decoration: none;
+  color: @cRed;
+  cursor: default;
+  box-shadow: 1px 2px 4px #cccccc;
+}

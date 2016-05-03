@@ -1,0 +1,36 @@
+.b-num {
+  width: 126px;
+
+}
+
+.b-num__input {
+  width: 55px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.b-num__ctrl {
+  .reset();
+  width: 34px;
+  height: 33px;
+  line-height: 33px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 33px;
+  background: #eeeeee;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.b-num__ctrl:hover {
+  background: #d41407;
+  color: #ffffff;
+}
+
+.b-num__ctrl.disable,
+.b-num__ctrl.disable:hover{
+  cursor: not-allowed;
+  opacity: 0.6;
+}

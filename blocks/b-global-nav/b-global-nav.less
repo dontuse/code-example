@@ -1,0 +1,78 @@
+.b-global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  overflow-y: auto;
+  color: white;
+}
+
+.b-global-nav__container {
+  background: #BE0303;
+  padding: 5px;
+  padding-left: 10px;
+  min-height: 100%;
+  //outline: 1px solid white;
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.7);
+}
+
+.b-global-nav__nav {
+  display: none;
+}
+
+.b-global-nav__current {
+  margin-left: 10px;
+}
+
+.b-global-nav__el,
+.b-global-nav__el:visited,
+.b-global-nav__el:hover {
+  border-bottom: 1px solid;
+  padding: 5px 0;
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.b-global-nav__el:hover {
+  background: rgba(122, 122, 122, 0.4);
+  color: black;
+}
+
+.b-global-nav__next {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.b-global-nav__opener {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  line-height: 1;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.b-global-nav__link {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.b-global-nav.open {
+  height: 100%;
+  width: 100%;
+}
+
+.b-global-nav.open .b-global-nav__nav {
+  display: block;
+}
+
+.b-global-nav.open .b-global-nav__container {
+  display: block;
+  width: 400px;
+}

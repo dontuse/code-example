@@ -1,0 +1,241 @@
+.b-control {
+
+  margin-bottom: 20px;
+  position: relative;
+
+  &__container-1 {
+    float: left;
+    width: 206px;
+  }
+
+  &__container-2 {
+    float: left;
+    width: 206px;
+    padding-left: 206px;
+  }
+}
+
+.b-control__wrapper {
+  position: relative;
+}
+
+.b-contol__label {
+  font-weight: normal;
+}
+
+.b-control__state_error {
+  //background: red;
+}
+
+.b-control__state_error .b-contol__label {
+  color: #bd0000;
+}
+
+.b-control__state_error .b-contol__input {
+  color: #bd0000;
+  border: 1px solid #bd0000;
+}
+
+.b-control__error {
+  color: #bd0000;
+  //font-weight: bold;
+}
+
+.b-contol__error {
+  color: #bd0000;
+}
+
+
+
+.b-control__hint {
+  font-size: 13px;
+  color: #808080;
+  padding-top: 2px;
+  padding-left: 8px;
+}
+
+
+.b-control__box {
+  position: relative;
+}
+
+.b-control__search-btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 28px;
+  top: 0;
+}
+
+.b-control__separator {
+  display: inline-block;
+  vert-align: middle;
+}
+
+.b-contol__clear {
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 10px;
+}
+.b-control__star {
+  position: absolute;
+  color: #bd0000;
+  font-size: 17px;
+  margin: 1px 0 0 5px;
+  cursor: default;
+}
+
+/*-----------*/
+
+.b-control_required {}
+
+.b-control_required  .b-contol__label:after {
+  content: '*';
+  color: @cRed;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/*-----------*/
+
+.b-control_t_cert {
+  color: #ffffff;
+  width: 200px;
+  display: inline-block;
+
+}
+
+.b-control_t_cert .b-input {
+  height: 62px;
+  font-size: 55px;
+  color: #000000;
+
+}
+
+/* b-control_giga */
+
+.b-control_giga {
+
+}
+
+.b-control_giga .b-contol__input {
+  height: 60px;
+  font-size: 30px;
+  font-family: @font1l;
+  padding-left: 15px;
+}
+
+.b-control_giga .b-contol__input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 56px;
+  font-family: Arial;
+}
+
+.b-control_giga .b-contol__input:-moz-placeholder { /* Firefox 18- */
+  font-size: 16px;
+  line-height: 56px;
+  font-family: Arial;
+}
+
+.b-control_giga .b-contol__input::-moz-placeholder {  /* Firefox 19+ */
+  font-size: 16px;
+  line-height: 56px;
+  font-family: Arial;
+}
+
+.b-control_giga .b-contol__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 56px;
+  font-family: Arial;
+}
+
+/*--------------*/
+
+.b-control_one_c {
+  width: 323px;
+}
+
+/*--------------------*/
+
+.b-control_search {
+  position: relative;
+}
+
+/*--------------*/
+
+.b-control_type_row {
+  font-size: 14px;
+}
+
+.b-control_type_row .b-contol__col-1 {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  width: 180px;
+  line-height: 34px;
+}
+
+.b-control_type_row .b-contol__label {
+
+}
+
+.b-control_type_row .b-contol__col-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 370px;
+}
+
+
+/*-------------------*/
+
+.b-control_inn .b-contol__input {
+  width: 30%;
+}
+
+.b-control_inn .b-contol__input_inn {
+  width: 40%;
+}
+
+
+/*--------------------------*/
+
+.b-control_type_date {
+
+}
+
+.b-control_type_date .b-contol__col-2 {
+  position: relative;
+}
+
+.b-control__date {
+  font-size: 20px;
+  color: #be0303;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+
+}
+
+.b-control_type_date .b-contol__input {
+  //width: 200px;
+}
+
+/*-------------*/
+
+.b-control_type_transport {
+
+}
+
+.b-control_type_transport .b-contol__col-2 {
+  width: auto;
+
+}
+
+
+.b-control_type_row-2 {
+  & .b-contol__col-1 {
+    width: 288px;
+  }
+}

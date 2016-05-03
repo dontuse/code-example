@@ -1,0 +1,39 @@
+.b-input {
+  .reset();
+  background: #ffffff;
+  box-sizing: border-box;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 12px;
+  font-family: Arial;
+  color: #555;
+  box-shadow: inset 0 3px 13px #cecece;
+  border: solid 1px #c0bebe;
+  width: 100%;
+  height: 34px;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.b-input:not(:read-only):focus {
+  border-color: orange;
+  outline: none;
+}
+
+.b-input::-ms-clear {
+  display: none;
+}
+
+.b-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.b-input[type=number]::-webkit-inner-spin-button,
+.b-input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; margin: 0px;
+}
+
+
+.b-input__textarea {
+  padding-top: 10px;
+  height: 80px;
+}

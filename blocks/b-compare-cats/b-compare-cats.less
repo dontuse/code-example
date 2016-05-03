@@ -1,0 +1,44 @@
+.b-compare-cats {
+  .clearfix();
+}
+
+.b-compare-cats__cat {
+  font-size: 24px;
+  font-family: @font1l;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.b-compare-cats__txt {
+  font-style: normal;
+  border-bottom: dashed 1px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.b-compare-cats__remove,
+.b-compare-cats__remove:visited {
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 1px solid #d6d6d6;
+  color: #080808;
+  text-align: center;
+  font-family: @Arial;
+  font-size: 24px;
+}
+
+.b-compare-cats__remove:hover {
+  color: @cRed;
+  border: 1px solid @cRed;
+}
+
+.b-compare-cats__box:after {
+  content: ",";
+  font-size: 25px;
+}

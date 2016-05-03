@@ -1,0 +1,37 @@
+.b-slide-arrow {
+  height: 1px;
+  background: #bababa;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+
+  margin-right: 16px;
+  margin-left: 16px;
+
+}
+
+.b-slide-arrow:after,
+.b-slide-arrow:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-color: transparent;
+  border-style: solid;
+  top: -4px;
+  border-width: 4px;
+}
+
+.b-slide-arrow:after {
+  left: -5px;
+  border-right-color: #bababa;
+}
+
+.b-slide-arrow:before {
+  right: -5px;
+  border-left-color: #bababa;
+}

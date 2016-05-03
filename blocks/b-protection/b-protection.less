@@ -1,0 +1,17 @@
+.b-protection {
+  border: 1px solid #cccccc;
+  padding: 24px;
+  padding-bottom: 10px;
+  position: relative;
+  max-width: 800px;
+}
+
+.b-protection:before {
+  content: '';
+  background-image: url("@{blocksPath}/b-protection/b-protection.png");
+  .size(58px,66px);
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}

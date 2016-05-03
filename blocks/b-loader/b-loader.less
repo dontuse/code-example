@@ -1,0 +1,42 @@
+.b-loader {
+  width:128px;
+  height: 128px;
+}
+
+.b-loader__blockG{
+  background-color: darkgray;
+  border:3px solid darkgray;
+  float:left;
+  height:91px;
+  margin-left:7px;
+  width:24px;
+  opacity:0.1;
+  animation-name:bounceG;
+  animation-duration:1.3s;
+  animation-iteration-count:infinite;
+  animation-direction:linear;
+  transform:scale(0.7);
+}
+
+.b-loader__blockG_1 {
+  animation-delay:0.39s;
+}
+
+.b-loader__blockG_2 {
+  animation-delay:0.52s;
+}
+
+.b-loader__blockG_3 {
+  animation-delay:0.65s;
+}
+
+@keyframes bounceG{
+  0%{
+    transform:scale(1.2);
+    opacity:1}
+
+  100%{
+    transform:scale(0.7);
+    opacity:0.1}
+
+}

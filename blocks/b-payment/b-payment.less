@@ -1,0 +1,50 @@
+.b-payment {
+  color: #000000;
+}
+
+.b-payment__el {
+  padding-left: 80px;
+
+  margin-bottom: 69px;
+
+  position: relative;
+}
+
+.b-payment__title {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 25px;
+  font-family: @font1;
+}
+
+
+.b-payment__el:before {
+  content: '';
+  width: 75px ;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.b-payment__el_t-1:before {
+  background-image: url("@{blocksPath}/b-payment/pay-1.png");
+}
+
+.b-payment__el_t-2:before {
+  background-image: url("@{blocksPath}/b-payment/pay-2.png");
+  left: -12px;
+  top: 3px;
+}
+
+.b-payment__el_t-3:before {
+  background-image: url("@{blocksPath}/b-payment/pay-3.png");
+  top: -11px;
+}
+
+.b-payment__el_t-4:before {
+  background-image: url("@{blocksPath}/b-payment/pay-4.png");
+}
+

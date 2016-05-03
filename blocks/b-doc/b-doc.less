@@ -1,0 +1,74 @@
+.b-doc,
+.b-doc:visited{
+  display: block;
+  padding-left: 36px;
+  //background: url("@{blocksPath}/b-doc/b-doc_pdf.png") no-repeat;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.b-doc__name {
+  text-decoration: underline;
+  //color: #0088b5;
+}
+.b-doc__type {
+  color: #000000;
+}
+
+.b-doc__icon {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  height: 40px;
+  width: 32px;
+  background: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.b-doc__icon:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 12px 0;
+  border-color: transparent #ffffff transparent transparent;
+  top: -1px;
+  right: -1px;
+}
+
+.b-doc__icon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 0 12px;
+  border-color: transparent  transparent transparent #e2e2e2;
+  top: -1px;
+  right: -1px;
+}
+
+.b-doc__cont {
+  font-size: 11px;
+  font-family: @font1;
+  top: 38%;
+  left: 0px;
+  position: absolute;
+  color: @cRed;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+}
+
+.b-doc__txt {
+  display: inline-block;
+}
+
+.b-doc:hover {
+  color: @cRed;
+}
+

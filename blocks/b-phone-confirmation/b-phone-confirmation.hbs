@@ -1,0 +1,53 @@
+<div class="b-phone-confirmation js-authorization"
+     data-url="ajax/js-authorization.json"
+     data-url-sms="ajax/js-authorization-pass.json"
+     data-url-sms-one-more="ajax/js-authorization-pass-more.json"
+        >
+  <div class="b-phone-confirmation__title">
+    <b>Введите и подтвердите свой телефон</b> чтобы увидеть историю заказов
+  </div>
+  <div>
+    <div class="b-control b-control_giga b-phone-confirmation__phone">
+      <div class="b-contol__col-2">
+        <input required="" placeholder="" id="phone" type="tel"
+               class="b-contol__input b-input js-masked-phone js-authorization__input" title="">
+
+        <div class="b-control__hint">Пример: +7 (912) 297-63-42</div>
+        <span class="b-contol__error" style="display: none;"></span>
+      </div>
+    </div>
+    <div style="display: none;"  class="b-phone-confirmation__done js-authorization__done-msg">
+      Вы уже <br/>
+      покупали у нас!
+    </div>
+    <!--<button type="button" class="b-button b-button_t_2  b-phone-confirmation__btn ">Подтвердить</button>-->
+  </div>
+
+  <div class="js-authorization__sms-box" style="clear: both; display: none;">
+    <div class="b-phone-confirmation__title">
+      <b>Введите Ваш пароль</b> <br/> полученный по электронной почте или смс сообщением
+    </div>
+    <div class="b-control b-control_giga b-phone-confirmation__phone">
+      <div class="b-contol__col-2">
+        <input required="" placeholder=""  class="b-contol__input b-input js-authorization__sms-input"
+               title="">
+
+        <div class="b-control__hint">Пример: 338619</div>
+        <span class="b-contol__error" style="display: none;"></span>
+      </div>
+    </div>
+    <button type="button" class="b-button b-button_t_2 js-authorization__btn-sms  b-phone-confirmation__btn ">Подтвердить</button>
+    <button type="button" class="b-button b-button_t_2 js-authorization__btn-sms-more  b-phone-confirmation__btn ">Выслать еще раз</button>
+  </div>
+
+  <div class="js-authorization__unknown-msg red" style="clear: both; display: none;">
+    Пользователь с данным телефонным номером не найден. <br/>
+    Проверьте правлильность введенного телефонного номера.
+  </div>
+  <div class="js-authorization__code-good-msg green" style="clear: both; display: none;">
+
+  </div>
+  <div class="js-authorization__code-error-msg red" style="clear: both; display: none;">
+    xxx
+  </div>
+</div>

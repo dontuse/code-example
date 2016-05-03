@@ -1,0 +1,54 @@
+.b-tooltip {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.2);
+  max-width: 400px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.b-tooltip__tail {
+  border: 11px solid transparent;
+  border-left-width: 0;
+  border-right-color: rgba(0,0,0,.2);
+  left: 0;
+  margin-left: -11px;
+  margin-top: -11px;
+  top: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.b-tooltip__tail:after {
+  content: '';
+  border: 10px solid transparent;
+  border-left-width: 0;
+  border-right-color: #ffffff;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: -10px;
+  margin-left: 1px;
+}
+
+.b-tooltip__close {
+  .size(20px,20px);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.b-tooltip__close:hover {
+  color: @cRed;
+}
+
+.b-tooltip__content {
+  padding: 9px 14px;
+}

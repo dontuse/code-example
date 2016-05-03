@@ -1,0 +1,64 @@
+.b-switch-site {
+  overflow: hidden;
+  //background: #ececec;
+  .clearFix();
+}
+
+.b-switch-site__el,
+.b-switch-site__el:visited {
+  float: left;
+  color: #818491;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 44px;
+  padding-right: 18px;
+  text-decoration: none;
+  background: #ffffff url("@{blocksPath}/b-switch-site/b-switch-site.png") no-repeat 10px 3px;
+}
+
+.b-switch-site__el:hover {
+  color: @cRed;
+}
+
+.b-switch-site__el_market {
+  background-position: 10px 3px;
+}
+
+.b-switch-site__el_shina {
+  background-position: 10px -60px;
+}
+
+.b-switch-site__el_market.active {
+  background-color: #d43333;
+  background-position: 10px 3px;
+  color: #ffffff;
+}
+
+.b-switch-site__el_shina.active {
+  background-color: #d43333;
+  background-position: 10px 60px;
+  color: #ffffff;
+}
+
+.b-switch-site__el_bilet,
+.b-switch-site__el_bilet:visited {
+  background: none;
+  position: relative;
+}
+
+.b-switch-site__el_bilet:before {
+  content: "";
+  background-image: url("@{blocksPath}/b-switch-site/Untitled.svg");
+  position: absolute;
+  left: 10px;
+  color: #CBCCCE;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  top: 4px;
+}
+
+
+
+

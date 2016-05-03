@@ -1,0 +1,136 @@
+.b-checkbox {
+  //margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.b-checkbox__chk:not(:checked),
+.b-checkbox__chk:checked {
+  position: absolute;
+  left: -9999px;
+}
+.b-checkbox__chk:not(:checked) + label,
+.b-checkbox__chk:checked + label {
+  position: relative;
+  padding-left: 27px;
+  cursor: pointer;
+  padding-top: 5px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.23;
+}
+
+/* checkbox aspect */
+.b-checkbox__chk:not(:checked) + label:before,
+.b-checkbox__chk:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 18px;
+  height: 18px;
+  //border: 3px solid #dfdfdf;
+  border: 1px solid #dfdfdf;
+  background: #f8f8f8;
+  //border-radius: 3px;
+}
+/* checked mark aspect */
+.b-checkbox__chk:not(:checked) + label:after,
+.b-checkbox__chk:checked + label:after {
+  content: '';
+  background: url('@{blocksPath}/b-checkbox/b-checkbox.png')  no-repeat center center;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  //top: 4px;
+  //left: 3px;
+  top: 3px;
+  left: 1px;
+  font-size: 24px;
+  color: #0088b5;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+.b-checkbox__chk:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.b-checkbox__chk:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+.b-checkbox__chk:disabled:not(:checked) + label:before,
+.b-checkbox__chk:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.b-checkbox__chk:disabled:checked + label:after {
+  color: #999;
+}
+.b-checkbox__chk:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+.b-checkbox__chk:checked:focus + label:before,
+.b-checkbox__chk:not(:checked):focus + label:before {
+  //border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  //border: 1px solid #4778d9!important;
+}
+
+
+.b-checkbox {
+
+}
+
+.b-checkbox__error {
+  color: @cRed;
+  font-size: 13px;
+  line-height: 1.1;
+  padding-left: 27px;
+  padding-top: 5px;
+}
+
+.b-checkbox_state_error {
+
+}
+
+.b-checkbox_state_error .b-checkbox__chk:not(:checked) + label:before,
+.b-checkbox_state_error .b-checkbox__chk:checked + label:before {
+  border: 1px solid @cRed;
+}
+
+.b-checkbox_inline {
+  display: inline-block;
+}
+
+/*------*/
+
+.b-checkbox_s_2 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/*-------*/
+
+.b-checkbox_t_2 .b-checkbox__chk:not(:checked) + label:after,
+.b-checkbox_t_2 .b-checkbox__chk:checked + label:after {
+  background: url('@{blocksPath}/b-checkbox/checked.png')  no-repeat center center;
+}
+
+
+/*---------*/
+
+.b-checkbox_faded {
+  opacity: 0.4;
+}
+
+
+
+
+
+
+
